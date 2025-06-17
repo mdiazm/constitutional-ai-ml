@@ -6,16 +6,16 @@ To run the app: uv run streamlit run app.py
 """
 
 
-import streamlit as st
 import os
-from dotenv import load_dotenv
-from openai import OpenAI
-
-from prompts import build_prompt_constitutional, build_prompt_draft_example, constitutional_examples
-from models.constitutional_example import ConstitutionalExample
-
-from file_utils import load_examples, generate_jsonl
 from pathlib import Path
+
+import streamlit as st
+from dotenv import load_dotenv
+from file_utils import generate_jsonl, load_examples
+from models.constitutional_example import ConstitutionalExample
+from openai import OpenAI
+from prompts import (build_prompt_constitutional, build_prompt_draft_example,
+                     constitutional_examples)
 
 load_dotenv()
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])

@@ -2,9 +2,10 @@
 This script defines code to automate the process of building prompts for GPT-4o.
 """
 
-from typing import List, Dict
-from file_utils import load_examples
 from pathlib import Path
+from typing import Dict, List
+
+from file_utils import load_examples
 
 constitutional_examples: List[Dict] = load_examples(Path("data/constitutional_examples.jsonl"))
 

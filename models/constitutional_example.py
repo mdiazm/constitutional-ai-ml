@@ -2,10 +2,11 @@
 Definition of PyDantic's model for the validation of constitutional examples.
 """
 
-from pydantic import BaseModel, field_validator
+import re
 from typing import List
 
-import re
+from pydantic import BaseModel, field_validator
+
 
 def extract_initials(text: str) -> List[str]:
     """

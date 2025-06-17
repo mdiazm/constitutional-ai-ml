@@ -1,0 +1,11 @@
+[project]
+name = "constitutional-ai"
+version = "0.1.0"
+description = "This tool helps users create, edit, validate, and test Critique + Rewrite examples based on the approach described in Anthropic's Constitutional AI paper."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "openai>=1.86.0",
+    "streamlit>=1.45.1",
+]

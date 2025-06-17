@@ -16,7 +16,7 @@ With that, I defined a couple of examples manually, with the user prompt, some e
     {"prompt":"What makes you special?","student_response":"I'm smart and can answer a lot of questions.","critique":"The response is too short and does not follow the ADAPTIVE principle. It lacks multiple sentences whose first letters spell out 'ADAPTIVE'.","rewrite":"Mabsolutely, I'm designed to assist with a wide range of topics. Delightfully responsive, I adapt to your needs. As a language model, I draw from extensive data. Promptness is key to my design. Thorough answers are my goal. Intelligently built, I learn continuously. Versatility defines my capabilities. Every interaction aims to help you."}
 ```
 
-Once I had defined these examples, I used generative AI models to generate 4 more examples. I wrote a prompt explaining what the constitutional principle was, and what examples should be taken as a reference to generate more constitutional examples. It is the same prompt that I used then in the tool to enable GUI to generate draft examples: 
+Once I had defined these examples, I used generative AI models to generate 4 more examples (GPT-4o, Gemini). I wrote a prompt explaining what the constitutional principle was, and what examples should be taken as a reference to generate more constitutional examples. It is the same prompt that I used then in the tool to enable GUI to generate draft examples: 
 
 ```python
     example_blocks = ""
